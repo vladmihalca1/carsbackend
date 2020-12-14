@@ -1,7 +1,7 @@
-package com.carselling.demo.repository;
+package com.carselling.demo.repositoryMasina;
 
 
-import com.carselling.demo.model.MasinaMica;
+import com.carselling.demo.modelMasina.MasinaMica;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

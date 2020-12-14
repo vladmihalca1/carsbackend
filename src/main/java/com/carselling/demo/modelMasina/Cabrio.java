@@ -1,4 +1,4 @@
-package com.carselling.demo.model;
+package com.carselling.demo.modelMasina;
 
 
 import lombok.AllArgsConstructor;
@@ -11,9 +11,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "masina_mica")
-public class MasinaMica {
-
+@Table(name = "masina_cabrio")
+public class Cabrio {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -23,6 +22,8 @@ public class MasinaMica {
 
     //O masina are un singul model (trebuie creata o tabela cu toate modelele)
     private String model;
+    //Asta poate sa fie optionala => nu toate modelele au o generatie anume
+    private String generatie;
 
     private Integer pret;
 
@@ -36,14 +37,14 @@ public class MasinaMica {
 
     private String stare;
 
+    //kw, cp, capacitate cilindrica
     private String motorizare;
 
-    //culoare
+    //clasa
     private String specificatii_caroserie;
 
     //Aici o lista cu dotari
     private String dotari;
 
     private String localizare;
-
 }
